@@ -8,7 +8,7 @@
 using namespace std;
 
 //Prime numbers were used to avoid infinite loops being caused
-#define TABLE_SIZE_PRIME 17
+#define TABLE_SIZE_PRIME 29
 
 class SongHash {
 private:
@@ -47,7 +47,6 @@ public:
 		while (data[hash] != NULL) {
 			//Searches through the hash if it exists and selectively returns an item back to the user.
 			SongObject *item = data[hash];
-			cout << item << endl;
 			if (item->song == key) {
 				return item;
 			}

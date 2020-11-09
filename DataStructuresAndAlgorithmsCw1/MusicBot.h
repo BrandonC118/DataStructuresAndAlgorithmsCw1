@@ -15,7 +15,7 @@ public:
 	~MusicBot() {}
 	void Insert(T* songObject) {
 		// Queue is empty
-		if (IsEmpty) {
+		if (IsEmpty()) {
 			data[count++] = songObject;
 		}
 		else {
